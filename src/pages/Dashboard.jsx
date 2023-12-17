@@ -12,13 +12,14 @@ function Dashboard() {
       {/* <h1>Hello {name + " + " + lastName}</h1> */}
       <hr />
       <div id="sidebar">
-        <NavLink to="profile" element={<Profile />}>
+        <NavLink to="/app/dashboard/profile" element={<Profile />}>
           Profile
         </NavLink>
         <NavLink to="payment" element={<Payment />}>
           Payment
         </NavLink>
       </div>
+      <Outlet />
     </div>
   );
 }

@@ -38,7 +38,7 @@ function Login() {
         <p>
           you are login {name}_ {lastName}
         </p>
-        <p>you can log out by clicking button under me :</p>
+        <p>you can log out by clicking below button :</p>
         <button
           style={{
             display: "block",
