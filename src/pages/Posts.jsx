@@ -1,5 +1,7 @@
-import { Link } from "react-router-dom";
+import { useState } from "react";
+import { Link, Navigate } from "react-router-dom";
 function Posts() {
+  const [isAut, setIsAut] =useState(false);
   return (
     <div>
       <h1>POSTS</h1>
@@ -15,6 +17,9 @@ function Posts() {
           <Link to="3">post3</Link>
         </li>
       </ul>
+      {/* <Link to ='/app'>go back to Home</Link> */}
+      {isAut && <Navigate to="/app" />}
+      <button onClick={()=>setIsAut(!isAut)}>go to post by navigate component</button>
     </div>
   );
 }
