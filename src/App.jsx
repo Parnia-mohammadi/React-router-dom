@@ -14,14 +14,14 @@ import { useState } from "react";
 function App() {
   return (
     <Routes>
-      <Route path="/app" element={<Layout />}>
+      <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
-        <Route path="posts" element={<Posts />} />
+        <Route path="/posts" element={<Posts />} />
         {/* dynamic route */}
-        <Route path="posts/:id" element={<Post />} />
+        <Route path="/posts/:id" element={<Post />} />
         {/* navigate by use navigate */}
-        <Route path="login" element={<Login />} />
-        <Route path="dashboard" element={<Dashboard />}>
+        <Route path="/login" element={<Login />} />
+        <Route path="/dashboard" element={<Dashboard />}>
           {/* <Route path="dashboard" element={<Dashboard />} />
         <Route path="dashboard/*" element={<LayoutDashboard />}>
           <Route path="profile" element={<Profile />} />

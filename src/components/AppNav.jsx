@@ -5,7 +5,7 @@ function AppNav({children}) {
     <nav>
       <ul>
         <li>
-          <NavLink end to="/app">
+          <NavLink end to="/">
             Home
           </NavLink>
         </li>

@@ -18,8 +18,8 @@ function Posts() {
         </li>
       </ul>
       {/* <Link to ='/app'>go back to Home</Link> */}
-      {isAut && <Navigate to="/app" />}
-      <button onClick={()=>setIsAut(!isAut)}>go to post by navigate component</button>
+      {isAut && <Navigate to="/" />}
+      <button onClick={()=>setIsAut(!isAut)}>go to home by navigate component</button>
     </div>
   );
 }

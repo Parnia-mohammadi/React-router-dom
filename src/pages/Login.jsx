@@ -18,7 +18,7 @@ function Login() {
     e.preventDefault();
     const data = name + " _ " + lastName;
     localStorage.setItem("loginData", data);
-    navigate("/app/login", { replace: true, state: { name, lastName } });
+    navigate("/login", { replace: true, state: { name, lastName } });
     setIsClicked(true);
     localStorage.setItem('isClicked','true');
   };
@@ -27,7 +27,7 @@ function Login() {
     localStorage.removeItem("loginData");
     setName("");
     setLastName("");
-    navigate("/app/login", { replace: false, state: { name, lastName } });
+    navigate("/login", { replace: false, state: { name, lastName } });
     setIsClicked(false);
     localStorage.setItem('isClicked','false');
   };
